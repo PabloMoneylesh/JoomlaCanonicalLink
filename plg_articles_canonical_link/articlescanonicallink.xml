@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>ArticlesCanonicalLink</name>
+	<author>PabloMoneylesh</author>
+	<creationDate>2017-01-01</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>pablomoneylesh@gmail.com</authorEmail>
+	<authorUrl>www.phototravel.dp.ua</authorUrl>
+	<version>1.0.0</version>
+	<description>Plugin creates and add canonical link to article header block</description>
+	<files>
+		<filename plugin="articlescanonicallink">articlescanonicallink.php</filename>
+	</files>
+</extension>
