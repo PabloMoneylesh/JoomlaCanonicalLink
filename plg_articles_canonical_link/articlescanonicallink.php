@@ -19,6 +19,10 @@ class plgSystemArticlesCanonicalLink extends JPlugin {
 		$option   	= JRequest::getCmd('option');
 		$view   	= JRequest::getCmd('view');
 		$artId = JRequest::getVar('id');
+		$errors = JError::getErrors();
+		if(count($errors)){
+			return;
+		}
 		
 		if ($option == "com_content" && $view == "article"){
 			$cmodel = JModelLegacy::getInstance('Article', 'ContentModel');
