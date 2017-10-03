@@ -22,6 +22,9 @@ class plgSystemArticlesCanonicalLink extends JPlugin {
 		
 		if ($option == "com_content" && $view == "article"){
 			$cmodel = JModelLegacy::getInstance('Article', 'ContentModel');
+			if(!isset($cmodel)){
+				return;
+			}				
 			$catid = $cmodel->getItem($artId)->catid;
 			$artRoute = ContentHelperRoute::getArticleRoute( $artId, $catid);		
 			$canonicalLink = JRoute::_($artRoute);
